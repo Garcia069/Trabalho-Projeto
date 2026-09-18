@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Codificador e Decodificador</h1>
+
+    <select id="tipo">
+        <option value="morse">Morse</option>
+        <option value="cesar">Cifra de César</option>
+        <option value="fonetico">Alfabeto Fonético</option>
+    </select>
+
+    <select id="acao">
+        <option value="codificar">Codificar</option>
+        <option value="decodificar">Decodificar</option>
+    </select>
+
+    <input id="chave" type="number" value="3" placeholder="Deslocamento">
+
+    <textarea id="entrada" placeholder="Digite o texto"></textarea>
+
+    <button onclick="processar()">Processar</button>
+    <button onclick="limpar()">Limpar</button>
+
+    <textarea id="resultado" placeholder="Resultado" readonly></textarea>
+
+    <button onclick="copiar()">Copiar</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
